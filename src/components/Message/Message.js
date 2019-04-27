@@ -9,7 +9,7 @@ class Message extends Component {
       animating: false
     };
 
-componentDidUpdate ({ score, topScore },prevStat){
+componentDidUpdate ({ score, topScore }){
 
     const newState = {animating:true};
 
