@@ -1,14 +1,14 @@
 import React from 'react';
 import "./style.css";
 
-function ClicK(props){
+function ClicK({key, id, handleClick, image}){
     return(
         <div 
         role = "img"
         aria-label = "click"
-        onClick = {() => props.handleClick(props.id)}
-        style ={{backgroundImage: `url("${props.image}")` }}
-        className ={`click${props.shake ? " shake" : ""}`}
+        onClick = {() => handleClick(id)}
+        style ={{backgroundImage: `url("${image}")` }}
+        // className ={`click${shake ? " shake" : ""}`}
         />
     );
 }
